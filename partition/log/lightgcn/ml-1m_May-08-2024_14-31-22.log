@@ -1,0 +1,10 @@
+2024-05-08 14:31:22,626 - {'optimizer': {'name': 'adam', 'lr': 0.001, 'weight_decay': 0}, 'train': {'epoch': 3000, 'batch_size': 4096, 'save_model': True, 'loss': 'pairwise', 'test_step': 3, 'reproducible': True, 'seed': 2023, 'patience': 5}, 'test': {'metrics': ['recall', 'ndcg'], 'k': [5, 10, 20], 'batch_size': 1024}, 'data': {'type': 'general_cf', 'name': 'ml-1m', 'user_num': 6041, 'item_num': 3701}, 'model': {'name': 'lightgcn', 'keep_rate': 0.8, 'embedding_size': 32, 'layer_num': 3, 'reg_weight': 1e-06, 'amazon': {'layer_num': 3, 'reg_weight': 1e-06}, 'yelp': {'layer_num': 3, 'reg_weight': 1e-06}, 'steam': {'layer_num': 2, 'reg_weight': 1e-06}}}
+2024-05-08 14:31:40,114 - Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.
+Traceback (most recent call last):
+  File "/NAS2020/Workspaces/DRLGroup/hywang/RLMRec/encoder/trainer/utils.py", line 15, in wrapper
+    return func(*args, **kwargs)
+  File "/NAS2020/Workspaces/DRLGroup/hywang/RLMRec/encoder/trainer/trainer.py", line 81, in train
+    self.save_model(model)
+  File "/NAS2020/Workspaces/DRLGroup/hywang/RLMRec/encoder/trainer/trainer.py", line 160, in save_model
+    user_info = model.user_embeds.cpu().numpy()
+RuntimeError: Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.

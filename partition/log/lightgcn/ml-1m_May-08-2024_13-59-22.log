@@ -1,0 +1,15 @@
+2024-05-08 13:59:22,548 - {'optimizer': {'name': 'adam', 'lr': 0.001, 'weight_decay': 0}, 'train': {'epoch': 3000, 'batch_size': 4096, 'save_model': True, 'loss': 'pairwise', 'test_step': 3, 'reproducible': True, 'seed': 2023, 'patience': 5}, 'test': {'metrics': ['recall', 'ndcg'], 'k': [5, 10, 20], 'batch_size': 1024}, 'data': {'type': 'general_cf', 'name': 'ml-1m', 'user_num': 6041, 'item_num': 3701}, 'model': {'name': 'lightgcn', 'keep_rate': 0.8, 'embedding_size': 32, 'layer_num': 3, 'reg_weight': 1e-06, 'amazon': {'layer_num': 3, 'reg_weight': 1e-06}, 'yelp': {'layer_num': 3, 'reg_weight': 1e-06}, 'steam': {'layer_num': 2, 'reg_weight': 1e-06}}}
+2024-05-08 13:59:40,935 - Epoch   0 Validation set [recall@5: 0.0429 recall@10: 0.0785 recall@20: 0.1365 ] [ndcg@5: 0.1990 ndcg@10: 0.1983 ndcg@20: 0.2166 ] 
+2024-05-08 14:00:05,544 - Epoch   3 Validation set [recall@5: 0.0395 recall@10: 0.0722 recall@20: 0.1290 ] [ndcg@5: 0.2140 ndcg@10: 0.2117 ndcg@20: 0.2287 ] 
+2024-05-08 14:00:30,479 - Epoch   6 Validation set [recall@5: 0.0385 recall@10: 0.0755 recall@20: 0.1371 ] [ndcg@5: 0.1900 ndcg@10: 0.1884 ndcg@20: 0.2074 ] 
+2024-05-08 14:00:54,710 - Epoch   9 Validation set [recall@5: 0.0378 recall@10: 0.0741 recall@20: 0.1311 ] [ndcg@5: 0.1990 ndcg@10: 0.1998 ndcg@20: 0.2171 ] 
+2024-05-08 14:01:19,637 - Epoch  12 Validation set [recall@5: 0.0398 recall@10: 0.0766 recall@20: 0.1374 ] [ndcg@5: 0.2042 ndcg@10: 0.2033 ndcg@20: 0.2214 ] 
+2024-05-08 14:01:44,565 - Epoch  15 Validation set [recall@5: 0.0396 recall@10: 0.0727 recall@20: 0.1344 ] [ndcg@5: 0.2069 ndcg@10: 0.2063 ndcg@20: 0.2299 ] 
+2024-05-08 14:02:09,874 - Epoch  18 Validation set [recall@5: 0.0384 recall@10: 0.0715 recall@20: 0.1325 ] [ndcg@5: 0.2056 ndcg@10: 0.2069 ndcg@20: 0.2296 ] 
+2024-05-08 14:02:35,347 - Epoch  21 Validation set [recall@5: 0.0377 recall@10: 0.0701 recall@20: 0.1311 ] [ndcg@5: 0.2035 ndcg@10: 0.2041 ndcg@20: 0.2262 ] 
+2024-05-08 14:03:01,570 - Epoch  24 Validation set [recall@5: 0.0367 recall@10: 0.0692 recall@20: 0.1278 ] [ndcg@5: 0.2034 ndcg@10: 0.2040 ndcg@20: 0.2241 ] 
+2024-05-08 14:03:26,533 - Epoch  27 Validation set [recall@5: 0.0364 recall@10: 0.0689 recall@20: 0.1269 ] [ndcg@5: 0.1974 ndcg@10: 0.2000 ndcg@20: 0.2217 ] 
+2024-05-08 14:03:26,712 - [recall@5: 0.0398 recall@10: 0.0766 recall@20: 0.1374 ] [ndcg@5: 0.2042 ndcg@10: 0.2033 ndcg@20: 0.2214 ] 
+2024-05-08 14:03:26,860 - [recall@5: 0.0398 recall@10: 0.0766 recall@20: 0.1374 ] [ndcg@5: 0.2042 ndcg@10: 0.2033 ndcg@20: 0.2214 ] 
+2024-05-08 14:03:27,040 - Save model parameters to ./encoder/checkpoint/lightgcn/lightgcn-ml-1m-2023.pth
+2024-05-08 14:03:27,040 - Best Epoch 12. Final test result: {'recall': array([0.03975004, 0.07659529, 0.13735727]), 'ndcg': array([0.2042377 , 0.20326627, 0.22141789])}.

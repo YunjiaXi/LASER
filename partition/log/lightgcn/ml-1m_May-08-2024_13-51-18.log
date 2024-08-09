@@ -1,0 +1,14 @@
+2024-05-08 13:51:18,800 - {'optimizer': {'name': 'adam', 'lr': 0.001, 'weight_decay': 0}, 'train': {'epoch': 3000, 'batch_size': 4096, 'save_model': False, 'loss': 'pairwise', 'test_step': 3, 'reproducible': True, 'seed': 2023, 'patience': 5}, 'test': {'metrics': ['recall', 'ndcg'], 'k': [5, 10, 20], 'batch_size': 1024}, 'data': {'type': 'general_cf', 'name': 'ml-1m', 'user_num': 6041, 'item_num': 3701}, 'model': {'name': 'lightgcn', 'keep_rate': 0.8, 'embedding_size': 32, 'layer_num': 3, 'reg_weight': 1e-06, 'amazon': {'layer_num': 3, 'reg_weight': 1e-06}, 'yelp': {'layer_num': 3, 'reg_weight': 1e-06}, 'steam': {'layer_num': 2, 'reg_weight': 1e-06}}}
+2024-05-08 13:51:38,451 - Epoch   0 Validation set [recall@5: 0.0429 recall@10: 0.0785 recall@20: 0.1365 ] [ndcg@5: 0.1990 ndcg@10: 0.1983 ndcg@20: 0.2166 ] 
+2024-05-08 13:52:03,823 - Epoch   3 Validation set [recall@5: 0.0395 recall@10: 0.0722 recall@20: 0.1290 ] [ndcg@5: 0.2140 ndcg@10: 0.2117 ndcg@20: 0.2287 ] 
+2024-05-08 13:52:29,138 - Epoch   6 Validation set [recall@5: 0.0385 recall@10: 0.0755 recall@20: 0.1371 ] [ndcg@5: 0.1900 ndcg@10: 0.1884 ndcg@20: 0.2074 ] 
+2024-05-08 13:52:53,602 - Epoch   9 Validation set [recall@5: 0.0378 recall@10: 0.0741 recall@20: 0.1311 ] [ndcg@5: 0.1990 ndcg@10: 0.1998 ndcg@20: 0.2171 ] 
+2024-05-08 13:53:18,300 - Epoch  12 Validation set [recall@5: 0.0398 recall@10: 0.0766 recall@20: 0.1374 ] [ndcg@5: 0.2042 ndcg@10: 0.2033 ndcg@20: 0.2214 ] 
+2024-05-08 13:53:43,736 - Epoch  15 Validation set [recall@5: 0.0404 recall@10: 0.0760 recall@20: 0.1360 ] [ndcg@5: 0.2107 ndcg@10: 0.2119 ndcg@20: 0.2324 ] 
+2024-05-08 13:54:08,286 - Epoch  18 Validation set [recall@5: 0.0389 recall@10: 0.0756 recall@20: 0.1347 ] [ndcg@5: 0.2071 ndcg@10: 0.2098 ndcg@20: 0.2296 ] 
+2024-05-08 13:54:33,193 - Epoch  21 Validation set [recall@5: 0.0377 recall@10: 0.0742 recall@20: 0.1327 ] [ndcg@5: 0.2037 ndcg@10: 0.2077 ndcg@20: 0.2265 ] 
+2024-05-08 13:54:58,248 - Epoch  24 Validation set [recall@5: 0.0370 recall@10: 0.0724 recall@20: 0.1330 ] [ndcg@5: 0.2009 ndcg@10: 0.2054 ndcg@20: 0.2256 ] 
+2024-05-08 13:55:22,962 - Epoch  27 Validation set [recall@5: 0.0360 recall@10: 0.0713 recall@20: 0.1323 ] [ndcg@5: 0.1981 ndcg@10: 0.2011 ndcg@20: 0.2231 ] 
+2024-05-08 13:55:23,137 - [recall@5: 0.0398 recall@10: 0.0766 recall@20: 0.1374 ] [ndcg@5: 0.2042 ndcg@10: 0.2033 ndcg@20: 0.2214 ] 
+2024-05-08 13:55:23,300 - [recall@5: 0.0398 recall@10: 0.0766 recall@20: 0.1374 ] [ndcg@5: 0.2042 ndcg@10: 0.2033 ndcg@20: 0.2214 ] 
+2024-05-08 13:55:23,356 - Best Epoch 12. Final test result: {'recall': array([0.03975004, 0.07659529, 0.13735727]), 'ndcg': array([0.2042377 , 0.20326627, 0.22141789])}.

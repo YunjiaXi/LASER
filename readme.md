@@ -1,4 +1,4 @@
-# A Decoding Acceleration Framework for Industrial Deployable LLM-based Recommender Systems (DARE)
+# Efficiency Unleashed: Lossless Acceleration for LLM-based Recommender Systems with Speculative Decoding (LASER)
 
 ## Requirements
 

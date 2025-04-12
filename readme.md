@@ -1,6 +1,6 @@
 # Efficiency Unleashed: Lossless Acceleration for LLM-based Recommender Systems with Speculative Decoding (LASER)
 
-Our paper was accepted by SIGIR 2025!
+[Our paper](https://arxiv.org/abs/2408.05676) was accepted by SIGIR 2025!
 
 ## Requirements
 

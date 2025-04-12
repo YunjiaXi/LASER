@@ -1,12 +1,14 @@
 # Efficiency Unleashed: Lossless Acceleration for LLM-based Recommender Systems with Speculative Decoding (LASER)
 
+Our paper was accepted by SIGIR 2025!
+
 ## Requirements
 
 ```
 
 python>=3.8
 torch>=2.2.1
-transformers>=4.38.2
+transformers==4.38.2
 numpy
 scikit-learn
 tiktoken
